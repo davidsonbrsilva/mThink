@@ -1,0 +1,44 @@
+﻿<Window x:Class="mThink.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mThink"
+        mc:Ignorable="d"
+        Title="mThink::Setup" Height="635" Width="350" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="277*"/>
+            <RowDefinition Height="231*"/>
+            <RowDefinition Height="63*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Geographic" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Margin="10">
+            <Grid Margin="10" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Slider x:Name="MapSizeSlider" Margin="10,36.667,10,0" Maximum="70" VerticalAlignment="Top" Value="50" SmallChange="1" Minimum="30" TickFrequency="2" ValueChanged="MapSizeSlider_ValueChanged"/>
+                <Label Content="Map Size:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Slider x:Name="SignalRadiusSlider" Margin="10.333,89.04,10,0" VerticalAlignment="Top" SmallChange="1" Value="12" Maximum="18" Minimum="6"/>
+                <Slider x:Name="VisionRadiusSlider" Margin="10.333,141.04,10,0" VerticalAlignment="Top" SmallChange="1" Maximum="9" Minimum="3" Value="6"/>
+                <Slider x:Name="TreesSlider" Height="25" Margin="10.333,194.04,10,0" VerticalAlignment="Top" Value="3" Minimum="1" Maximum="5" SmallChange="1"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Agents" Margin="10" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Grid.Row="1">
+            <Grid Margin="10" VerticalAlignment="Center">
+                <Slider x:Name="MonkeysSlider" Margin="10,28.326,10,0" VerticalAlignment="Top" SmallChange="1" Maximum="6" Value="2" Minimum="2"/>
+                <Slider x:Name="EaglesSlider" Margin="10,80.326,10,0" VerticalAlignment="Top" Value="1" Maximum="6" SmallChange="1" Minimum="1"/>
+                <Slider x:Name="TigersSlider" Height="23" Margin="10,132.326,10,0" VerticalAlignment="Top" Maximum="6" Value="1" SmallChange="1" Minimum="1"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="GoButton" Content="Go" HorizontalAlignment="Right" Height="30" Margin="0,18.517,10,10" Grid.Row="2" VerticalAlignment="Center" Width="100" Click="GoButton_Click"/>
+        <Label Content="Signal Radius:" HorizontalAlignment="Left" Margin="36.333,105.667,0,0" VerticalAlignment="Top" Height="25.96" Width="83.177"/>
+        <Label Content="Vision Radius:" HorizontalAlignment="Left" Margin="36.333,157,0,0" VerticalAlignment="Top" Height="25.96" Width="83.207"/>
+        <Label Content="Monkeys:" HorizontalAlignment="Left" Margin="36.333,52.31,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Eagles:" HorizontalAlignment="Left" Margin="36.333,104.27,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Tigers:" HorizontalAlignment="Left" Margin="36.333,155.877,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Trees:" HorizontalAlignment="Left" Margin="37.556,210,0,0" VerticalAlignment="Top" Height="25.96" Width="44.897"/>
+        <TextBlock x:Name="MapSizeValue" HorizontalAlignment="Right" Margin="0,59,31,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
