@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Monkey
+  - Eagle
+  - Tiger
+  - VisionRadius
+  - Floor
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Trees
+    uniqueID: 242320761
+    locked: 0
+  - name: Food
+    uniqueID: 1078265443
+    locked: 0
+  - name: Radius
+    uniqueID: 4022682665
+    locked: 0
+  - name: Eagles
+    uniqueID: 53437291
+    locked: 0
+  - name: Tigers
+    uniqueID: 3236303303
+    locked: 0
+  - name: Monkeys
+    uniqueID: 2085575641
+    locked: 0
