@@ -33,7 +33,7 @@ public class ListenSignal : MonoBehaviour {
 
                     int indexOfPredatorSeen = gameController.Predators.IndexOf(dp.PredatorsSeen[randomPredatorSeen]);
 
-                    float newValue = mc.PredatorsTable[src.Signal, indexOfPredatorSeen] + 0.01f;
+                    float newValue = mc.PredatorsTable[src.Signal, indexOfPredatorSeen] + 0.1f;
 
                     if (newValue > 1.0f)
                     {

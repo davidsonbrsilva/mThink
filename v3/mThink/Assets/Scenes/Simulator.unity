@@ -298,13 +298,13 @@ MonoBehaviour:
   runtime: -1
   eagle:
     prefab: {fileID: 1886027677887256, guid: fd6681ed00448ea4fb5bb5c31e5f1f16, type: 2}
-    amount: 1
+    amount: 2
   tiger:
     prefab: {fileID: 1212015430432418, guid: 1875894d73826b74d9ba21c710389a36, type: 2}
-    amount: 1
+    amount: 2
   monkey:
     prefab: {fileID: 1133572485637776, guid: 172b93a750ac21e49ad8fec18e3131a7, type: 2}
-    amount: 3
+    amount: 4
   symbols: 10
   boundary: {x: 6.678, y: 3.687}
 --- !u!4 &1290754855

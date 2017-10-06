@@ -56,6 +56,8 @@ GameObject:
   - component: {fileID: 4562004639744098}
   - component: {fileID: 212795360004335968}
   - component: {fileID: 58901940109487728}
+  - component: {fileID: 114894091902681246}
+  - component: {fileID: 50634469835972706}
   m_Layer: 0
   m_Name: Monkey Icon
   m_TagString: Monkey
@@ -104,6 +106,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50634469835972706
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1898878867546560}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!58 &58901940109487728
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -219,6 +241,17 @@ MonoBehaviour:
   signalRadius: {fileID: 1171683215454748, guid: 1fba8459a425dea4daa396aa2bce9931,
     type: 2}
   signalRate: 0.5
+--- !u!114 &114894091902681246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1898878867546560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f25ea8668e42c4489052c978b22c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212632077570900496
 SpriteRenderer:
   m_ObjectHideFlags: 1

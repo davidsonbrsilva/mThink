@@ -9,6 +9,7 @@ TagManager:
   - Tiger
   - VisionRadius
   - Floor
+  - SignalRadius
   layers:
   - Default
   - TransparentFX
