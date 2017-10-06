@@ -63,7 +63,7 @@ public class DetectsPrey : MonoBehaviour {
             {
                 lastMonkeySeen = monkeySeen;
                 alertState = true;
-                Debug.Log("O estado de alerta agora está ATIVO");
+                //Debug.Log("O estado de alerta agora está ATIVO");
             }
         }
     }
@@ -85,6 +85,6 @@ public class DetectsPrey : MonoBehaviour {
     {
         lastMonkeySeen = null;
         alertState = false;
-        Debug.Log("O estado de alerta agora está INATIVO");
+        //Debug.Log("O estado de alerta agora está INATIVO");
     }
 }

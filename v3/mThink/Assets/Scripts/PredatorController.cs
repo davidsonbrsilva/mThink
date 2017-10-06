@@ -20,7 +20,6 @@ public class PredatorController : MonoBehaviour
     {
         gameController = GameObject.FindWithTag("GameController").GetComponent<GameController>();
         detectsPrey = transform.GetChild(1).GetComponent<DetectsPrey>();
-        Debug.Log(detectsPrey);
     }
 
     private void Start()

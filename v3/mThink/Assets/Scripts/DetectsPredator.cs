@@ -13,7 +13,6 @@ public class DetectsPredator : MonoBehaviour {
     private MonkeyController monkeyController;
     private List<GameObject> predatorsSeen;
     private GameObject thisMonkey;
-    private bool alertState;
 
     public List<GameObject> PredatorsSeen
     {
@@ -27,25 +26,6 @@ public class DetectsPredator : MonoBehaviour {
             predatorsSeen = value;
         }
     }
-    public GameObject LastPredatorSeen
-    {
-        get
-        {
-            return lastPredatorSeen;
-        }
-    }
-    public bool AlertState
-    {
-        get
-        {
-            return alertState;
-        }
-
-        set
-        {
-            alertState = value;
-        }
-    }
 
     private void Awake()
     {
@@ -53,7 +33,6 @@ public class DetectsPredator : MonoBehaviour {
         predatorsSeen = new List<GameObject>();
         thisMonkey = gameObject.transform.parent.gameObject;
         monkeyController = thisMonkey.GetComponent<MonkeyController>();
-        alertState = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -73,13 +52,6 @@ public class DetectsPredator : MonoBehaviour {
             else if (other.CompareTag("Tiger"))
             {
                 SendSignal(indexOfPredatorSeen, new Color(1, 0.62890625f, 0.2890625f, 1));
-            }
-            
-            if (alertState == false)
-            {
-                lastPredatorSeen = predatorSeen;
-                alertState = true;
-                Debug.Log("O estado de alerta agora está ATIVO");
             }
         }
     }
@@ -112,19 +84,7 @@ public class DetectsPredator : MonoBehaviour {
             GameObject predatorSeen = other.gameObject.transform.parent.gameObject;
 
             predatorsSeen.Remove(predatorSeen);
-
-            if (alertState == true)
-            {
-                Invoke("TurnOffAlertState", 5f);
-            }
         }
-    }
-
-    private void TurnOffAlertState()
-    {
-        lastPredatorSeen = null;
-        alertState = false;
-        Debug.Log("O estado de alerta agora está INATIVO");
     }
 
     private void SendSignal(int indexOfPredatorSeen, Color color)

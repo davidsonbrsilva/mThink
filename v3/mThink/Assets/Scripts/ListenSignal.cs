@@ -6,10 +6,20 @@ public class ListenSignal : MonoBehaviour {
     private SignalRadiusController src;
     private DetectsPredator dp;
     private MonkeyController mc;
-    GameObject thisMonkey;
+    private GameObject thisMonkey;
+    private int lastHeardSignal;
+
+    public int LastHeardSignal
+    {
+        get
+        {
+            return lastHeardSignal;
+        }
+    }
 
     private void Awake()
     {
+        lastHeardSignal = -1;
         gameController = GameObject.FindWithTag("GameController").GetComponent<GameController>();
         thisMonkey = gameObject.transform.parent.gameObject;
         dp = thisMonkey.transform.GetChild(1).GetComponent<DetectsPredator>();
@@ -37,12 +47,12 @@ public class ListenSignal : MonoBehaviour {
 
                     if (newValue > 1.0f)
                     {
-                        mc.PredatorsTable[src.Signal, indexOfPredatorSeen] = 1.0f;
+                        newValue = 1.0f;
                     }
-                    else
-                    {
-                        mc.PredatorsTable[src.Signal, indexOfPredatorSeen] = newValue;
-                    }
+
+                    mc.PredatorsTable[src.Signal, indexOfPredatorSeen] = newValue;
+
+                    lastHeardSignal = src.Signal;
 
                     Debug.Log("The monkey " + indexOfThisMonkey + " received the signal " + src.Signal + " and related it to the predator " + indexOfPredatorSeen + "\n" + gameController.PredatorsTablesText());
                 }

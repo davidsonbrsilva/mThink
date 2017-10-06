@@ -34,6 +34,11 @@ public class SignalRadiusController : MonoBehaviour {
         }
     }
 
+    private void Awake()
+    {
+        signal = -1;
+    }
+
     private void Update()
     {
         Color currentColor = gameObject.GetComponent<SpriteRenderer>().color;
