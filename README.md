@@ -1,5 +1,5 @@
 # mThink
-![Github issues](https://img.shields.io/github/issues/davidson-bruno/mThink.svg) ![Github forks](https://img.shields.io/github/forks/davidson-bruno/mThink.svg) ![Github stars](https://img.shields.io/github/stars/davidson-bruno/mThink.svg) ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+![Github issues](https://img.shields.io/github/issues/davidsonbrsilva/mThink.svg) ![Github forks](https://img.shields.io/github/forks/davidsonbrsilva/mThink.svg) ![Github stars](https://img.shields.io/github/stars/davidson-bruno/mThink.svg) ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 This is an artificial intelligence project about the emergence of self-organized symbol-based communication in artificial creatures. Through it we are studying the role of grammar in the context of emerging languages. This is a problem based on the behavior of monkeys vervets found in Africa and the purpose of this system is to make them learn to communicate with each other to increase their chances of survival.
 
@@ -8,17 +8,17 @@ This system uses the reinforcement learning method. The agents of this system ar
 ## Versions
 Each version of mThink is like a different project. Currently only the mThink v3 version is supported because it is like a new project that takes the experiences of its previous versions to build a system concerned with the details of the problem and with features that extend the original version of the problem. It is the purpose of this version, for example, to implement the functionality of predator hunting and monkey escape.
 
-### About [v3](https://github.com/davidson-bruno/mThink/tree/master/v3)
-![version status](https://img.shields.io/badge/status-active-green.svg)
+### About [v3](https://github.com/davidsonbrsilva/mThink/tree/master/v3)
+![version status](https://img.shields.io/badge/status-deprecated-red.svg)
 
 In this version monkeys are displayed on the screen and the interaction among them can be viewed in a more user friendly way. The movement among them, albeit random, already uses Moore's neighborhood.
 
-### About [v2](https://github.com/davidson-bruno/mThink/tree/master/v2)
+### About [v2](https://github.com/davidsonbrsilva/mThink/tree/master/v2)
 ![version status](https://img.shields.io/badge/status-deprecated-red.svg)
 
 This version is a Windows Presentation Forms application where the monkeys are displayed on the screen and the interaction among them can be viewed in a more user friendly way. The movement among them, albeit random, already uses Moore's neighborhood.
 
-### About [v1](https://github.com/davidson-bruno/mThink/tree/master/v1)
+### About [v1](https://github.com/davidsonbrsilva/mThink/tree/master/v1)
 ![version status](https://img.shields.io/badge/status-deprecated-red.svg)
 
 This version is a console application that shows the interaction and communication among the monkeys. The movement is still random, but the symbols used by monkeys converge, showing that they learn to use the same language to refer to predators in the system, increasing their chances of survival.
