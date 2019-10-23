@@ -1,5 +1,5 @@
 # mThink
-![Github issues](https://img.shields.io/github/issues/davidsonbrsilva/mThink.svg) ![Github forks](https://img.shields.io/github/forks/davidsonbrsilva/mThink.svg) ![Github stars](https://img.shields.io/github/stars/davidson-bruno/mThink.svg) ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) ![Status](https://img.shields.io/badge/status-stopped-green?style=flat-square)
+![Github issues](https://img.shields.io/github/issues/davidsonbrsilva/mThink.svg) ![Github forks](https://img.shields.io/github/forks/davidsonbrsilva/mThink.svg) ![Github stars](https://img.shields.io/github/stars/davidson-bruno/mThink.svg) ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) ![Status](https://img.shields.io/badge/status-stopped-green)
 
 This is an artificial intelligence project about the emergence of self-organized symbol-based communication in artificial creatures. Through it we are studying the role of grammar in the context of emerging languages. This is a problem based on the behavior of monkeys vervets found in Africa and the purpose of this system is to make them learn to communicate with each other to increase their chances of survival.
 
